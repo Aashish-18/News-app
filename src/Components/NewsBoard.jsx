@@ -16,7 +16,7 @@ const NewsBoard = ({ category }) => {
     return (
         <div>
             <h2 className="text-center">Latest <span className="badge bg-danger">News</span></h2>
-            {articles.length > 0 ? (
+            {articles && articles.length > 0 ? (
                 articles.map((news, index) => (
                     <NewsItem key={index} title={news.title} description={news.description} src={news.urlToImage} url={news.url} />
                 ))
