@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Nav=({setCategory})=>{
     return(
         <nav  className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -24,6 +26,9 @@ const Nav=({setCategory})=>{
               </li>
               <li  className="nav-item">
               <div  className="nav-link" onClick={()=>setCategory("health")} >Health</div>
+              </li>
+              <li  className="nav-item">
+              <Link to='/game' className="nav-link">Feeling Bored?</Link>
               </li>
             </ul>
           </div>
